@@ -9,6 +9,6 @@ jobs:
 
     steps:
     - name: Configure
-      run: sh configure.sh
+      run: mkdir build && cd build && cmake .. && make
     - name: Work
       run: cd build && ./Graph
