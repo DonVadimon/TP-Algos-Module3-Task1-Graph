@@ -1,4 +1,4 @@
-name: 'Algos Module 3 Task 1 Khizhnyakov Vadim'
+name: 'Build'
 on: [pull_request, push]
 
 jobs:
@@ -10,6 +10,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Configure
-    - run: sh configure.sh
+      run: sh configure.sh
     - name: Work
-    - run: cd build && ./Graph
+      run: cd build/ && ./Graph
